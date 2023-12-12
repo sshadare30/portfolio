@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exit</title>
+    </head>
+    <body>
+        <img src="sharonp.jpg"
+        height="800">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Random.html">Random</a></li>
+                    <li><a href="Schoolprojects.html">School Projects</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="ContactMe.html">Contact Me</a></li>
+                    <li><button id="exitButton">Exit</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Exit</h1>
+            <p> This is the end of my portfolio. Thanks for coming to my website.</p>
+    
+    <!-- Exit Button -->
+    <button id="exitButton">Exit</button>
+
+    <!-- JavaScript to handle the Exit button -->
+    <script>
+        // Get the Exit button element by its ID
+        var exitButton = document.getElementById("exitButton");
+
+        // Add a click event listener to the Exit button
+        exitButton.addEventListener("click", function () {
+            // Prompt the user before closing the window
+            var confirmExit = confirm("Are you sure you want to exit?");
+            if (confirmExit) {
+                // Close the current window/tab
+                window.close();
+            }
+        });
+    </script>
+        </main>
+
+        
+    </body>
+</html>
